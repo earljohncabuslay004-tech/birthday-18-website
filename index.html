@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>18th Birthday Celebration</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         OPENING SCREEN
+    ====================================================== -->
+
+    <section id="intro" class="intro-screen">
+
+        <div class="intro-content">
+
+            <div class="intro-crown">
+                ♛
+            </div>
+
+            <h1>
+                HAPPY 18th BIRTHDAY!
+            </h1>
+
+            <h2 id="nameIntro">
+                PRECIOUS JOYRELLE
+            </h2>
+
+            <p class="intro-subtitle">
+                A special celebration just for you ♡
+            </p>
+
+            <button id="startBtn">
+                🎁 Open Your Surprise
+            </button>
+
+            <p class="intro-hint">
+                Click to begin the celebration
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         MAIN BIRTHDAY SCENE
+    ====================================================== -->
+
+    <main id="birthdayScene" class="scene hidden">
+
+        <!-- Background lights -->
+        <div class="background-lights"></div>
+
+
+        <!-- =================================================
+             TITLE
+        ================================================== -->
+
+        <header class="birthday-heading">
+
+            <div class="small-crown">
+                ♛
+            </div>
+
+            <h1>
+                HAPPY 18th BIRTHDAY!
+            </h1>
+
+            <h2 id="nameMain">
+                PRECIOUS JOYRELLE
+            </h2>
+
+        </header>
+
+
+        <!-- =================================================
+             MAIN THREE COLUMN AREA
+        ================================================== -->
+
+        <section class="birthday-layout">
+
+
+            <!-- =================================================
+                 LEFT BIBLE VERSE
+            ================================================== -->
+
+            <article class="verse-card left-card">
+
+                <div class="flower-decoration">
+                    ✿ ❀
+                </div>
+
+                <h3>
+                    Jeremiah 29:11
+                </h3>
+
+                <div class="verse-heart">
+                    ♥
+                </div>
+
+                <p>
+                    “For I know the plans I have for you,”
+                    declares the Lord, “plans to give you hope
+                    and a future.”
+                </p>
+
+            </article>
+
+
+            <!-- =================================================
+                 CENTER
+            ================================================== -->
+
+            <section class="center-stage">
+
+
+                <!-- =================================================
+                     PHOTO CAROUSEL
+                ================================================== -->
+
+                <div class="carousel">
+
+                    <button
+                        class="carousel-btn prev"
+                        aria-label="Previous photo">
+                        ‹
+                    </button>
+
+
+                    <div class="photo-frame">
+
+                        <img
+                            id="carouselImage"
+                            src="images/photo1.svg"
+                            alt="Birthday photo">
+
+                    </div>
+
+
+                    <button
+                        class="carousel-btn next"
+                        aria-label="Next photo">
+                        ›
+                    </button>
+
+                </div>
+
+
+                <!-- Carousel dots -->
+
+                <div
+                    class="dots"
+                    id="dots">
+                </div>
+
+
+                <!-- =================================================
+                     CAKE
+                ================================================== -->
+
+                <div class="cake-area">
+
+
+                    <!-- ================================
+                         18 NUMBER CANDLES
+                    ================================= -->
+
+                    <div class="number-candles">
+
+
+                        <!-- NUMBER 1 -->
+
+                        <div class="number-candle">
+
+                            <span class="flame"></span>
+
+                            <span class="number">
+                                1
+                            </span>
+
+                        </div>
+
+
+                        <!-- NUMBER 8 -->
+
+                        <div class="number-candle">
+
+                            <span class="flame"></span>
+
+                            <span class="number">
+                                8
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================================
+                         CAKE
+                    ================================= -->
+
+                    <div class="cake">
+
+
+                        <!-- Cake top -->
+
+                        <div class="cake-top">
+
+                            <div class="cream-drip drip1"></div>
+
+                            <div class="cream-drip drip2"></div>
+
+                            <div class="cream-drip drip3"></div>
+
+                            <div class="cream-drip drip4"></div>
+
+                            <div class="cream-drip drip5"></div>
+
+                        </div>
+
+
+                        <!-- Cake body -->
+
+                        <div class="cake-body">
+
+
+                            <div class="cake-decoration">
+                                ✦　✿　✦
+                            </div>
+
+
+                           
+
+
+                            <div class="bottom-decoration">
+                                ✿　♡　✿
+                            </div>
+
+                        </div>
+
+
+                        <!-- Bottom layer -->
+
+                        <div class="cake-bottom">
+
+                        </div>
+
+
+                        <!-- Plate -->
+
+                        <div class="cake-plate">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 RIGHT BIBLE VERSE
+            ================================================== -->
+
+            <article class="verse-card right-card">
+
+                <div class="flower-decoration">
+                    ✿ ❀
+                </div>
+
+                <h3>
+                    Proverbs 3:5–6
+                </h3>
+
+                <div class="verse-heart">
+                    ♥
+                </div>
+
+                <p>
+                    “Trust in the Lord with all your heart
+                    and lean not on your own understanding;
+                    in all your ways submit to Him,
+                    and He will make your paths straight.”
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <!-- =================================================
+             MUSIC STATUS
+        ================================================== -->
+
+        <div class="music-status">
+
+            ♫ Happy Birthday Music Playing...
+
+        </div>
+
+
+        <!-- =================================================
+             MUSIC
+        ================================================== -->
+
+        <audio
+            id="birthdayMusic"
+            loop
+            preload="auto">
+
+            <source
+                src="music/happy-birthday.mp3"
+                type="audio/mpeg">
+
+        </audio>
+
+
+        <!-- Music error -->
+
+        <p
+            id="musicError"
+            class="music-error hidden">
+
+            Music file not found.
+
+            <br>
+
+            Please put your MP3 here:
+
+            <b>
+                music/happy-birthday.mp3
+            </b>
+
+        </p>
+
+    </main>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
