@@ -125,39 +125,45 @@
                      PHOTO CAROUSEL
                 ================================================== -->
 
-                <div class="carousel">
+                <div id="photoSection">
 
-                    <button
-                        class="carousel-btn prev"
-                        aria-label="Previous photo">
-                        ‹
-                    </button>
+                    <div class="carousel">
+
+                        <button
+                            type="button"
+                            class="carousel-btn prev"
+                            aria-label="Previous photo">
+                            ‹
+                        </button>
 
 
-                    <div class="photo-frame">
+                        <div class="photo-frame">
 
-                        <img
-                            id="carouselImage"
-                            src="images/photo1.svg"
-                            alt="Birthday photo">
+                            <img
+                                id="carouselImage"
+                                src="images/photo1.jpg"
+                                alt="Birthday photo">
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="carousel-btn next"
+                            aria-label="Next photo">
+                            ›
+                        </button>
 
                     </div>
 
 
-                    <button
-                        class="carousel-btn next"
-                        aria-label="Next photo">
-                        ›
-                    </button>
+                    <!-- Carousel dots -->
 
-                </div>
+                    <div
+                        class="dots"
+                        id="dots">
+                    </div>
 
-
-                <!-- Carousel dots -->
-
-                <div
-                    class="dots"
-                    id="dots">
                 </div>
 
 
@@ -168,14 +174,9 @@
                 <div class="cake-area">
 
 
-                    <!-- ================================
-                         18 NUMBER CANDLES
-                    ================================= -->
+                    <!-- 18 NUMBER CANDLES -->
 
                     <div class="number-candles">
-
-
-                        <!-- NUMBER 1 -->
 
                         <div class="number-candle">
 
@@ -187,8 +188,6 @@
 
                         </div>
 
-
-                        <!-- NUMBER 8 -->
 
                         <div class="number-candle">
 
@@ -203,9 +202,7 @@
                     </div>
 
 
-                    <!-- ================================
-                         CAKE
-                    ================================= -->
+                    <!-- CAKE -->
 
                     <div class="cake">
 
@@ -231,14 +228,9 @@
 
                         <div class="cake-body">
 
-
                             <div class="cake-decoration">
                                 ✦　✿　✦
                             </div>
-
-
-                           
-
 
                             <div class="bottom-decoration">
                                 ✿　♡　✿
@@ -250,19 +242,63 @@
                         <!-- Bottom layer -->
 
                         <div class="cake-bottom">
-
                         </div>
 
 
                         <!-- Plate -->
 
                         <div class="cake-plate">
-
                         </div>
 
                     </div>
 
                 </div>
+
+
+                <!-- =================================================
+                     MUSIC STATUS
+                ================================================== -->
+
+                <div
+                    class="music-status"
+                    id="musicStatus">
+
+                    ♫ Happy Birthday Music Playing...
+
+                </div>
+
+
+                <!-- =================================================
+                     VIDEO
+                ================================================== -->
+
+                <section
+                    id="videoSection"
+                    class="video-section hidden">
+
+                    <h2 class="video-title">
+                        A Special Message For You ♡
+                    </h2>
+
+                    <video
+                        id="birthdayVideo"
+                        controls
+                        playsinline
+                        preload="auto">
+
+                        <source
+                            src="videos/birthday-message.mp4"
+                            type="video/mp4">
+
+                        Your browser does not support video playback.
+
+                    </video>
+
+                    <p class="video-hint">
+                        Enjoy this special message for you ♡
+                    </p>
+
+                </section>
 
             </section>
 
@@ -295,17 +331,6 @@
             </article>
 
         </section>
-
-
-        <!-- =================================================
-             MUSIC STATUS
-        ================================================== -->
-
-        <div class="music-status">
-
-            ♫ Happy Birthday Music Playing...
-
-        </div>
 
 
         <!-- =================================================
@@ -344,8 +369,6 @@
 
     </main>
 
-
-    <!-- JavaScript -->
 
     <script src="script.js"></script>
 
